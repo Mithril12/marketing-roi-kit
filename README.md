@@ -1,7 +1,7 @@
 # open-marketing-roi-kit
 
-A practical toolkit that turns messy ad platform exports into CFO-ready ROI, payback,
-and budget insights — without forcing you into a specific MMM framework.
+A practical toolkit that turns disparate ad platform data into clean ROI, payback,
+and budget insights.
 
 ## What it does
 
@@ -17,7 +17,7 @@ and budget insights — without forcing you into a specific MMM framework.
 
 It is NOT "yet another MMM". It's an **ROI operating layer**:
 - Handles the boring data wrangling.
-- Produces finance-aligned metrics.
+- Produces financial metrics.
 - Can be extended to plug into MMM frameworks or BI tools.
 
 ## Quickstart
