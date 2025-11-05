@@ -1,0 +1,43 @@
+project_name: "Example Brand ROI"
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_dir: "data/processed"
+  outputs_dir: "outputs"
+
+# Cost of goods as a percentage of revenue (e.g. 0.4 = 40%)
+cogs_pct: 0.4
+
+# Lifetime value assumptions (optional, not used by default)
+ltv:
+  enabled: false
+  # ltv_per_conversion: 300.0
+
+sources:
+  - name: "google_ads"
+    channel: "Google Ads"
+    type: "csv"
+    path: "data/raw/google_ads_example.csv"
+    date_format: "%Y-%m-%d"
+    mappings:
+      date: "date"
+      campaign: "campaign_name"
+      spend: "cost"
+      impressions: "impressions"
+      clicks: "clicks"
+      conversions: "conversions"
+      revenue: "revenue"
+
+  - name: "meta_ads"
+    channel: "Meta"
+    type: "csv"
+    path: "data/raw/meta_ads_example.csv"
+    date_format: "%Y-%m-%d"
+    mappings:
+      date: "date"
+      campaign: "campaign"
+      spend: "spend"
+      impressions: "impressions"
+      clicks: "clicks"
+      conversions: "purchases"
+      revenue: "purch_value"

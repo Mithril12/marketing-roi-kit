@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-marketing-roi-kit"
+version = "0.1.0"
+description = "Practical ROI toolkit for marketing spend"
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0.0",
+  "pyyaml>=6.0",
+  "numpy>=1.24.0",
+  "streamlit>=1.32.0"
+]
+
+[project.scripts]
+roi-kit = "roi_kit.cli:main"
